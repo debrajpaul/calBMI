@@ -1,4 +1,4 @@
-# calBMI
+# code-20120522-debrajpaul
 This is a BMI Calculator project for standalone applications using Node.js,TypeScript and Jest.
 
 ## What is this repository for?
@@ -6,7 +6,7 @@ This is a BMI Calculator project for standalone applications using Node.js,TypeS
     typescript interface.
 
     Version:- 1.0
-    Git clone :-https://github.com/debrajpaul/calBMI.git
+    Git clone :-https://github.com/debrajpaul/code-20120522-debrajpaul.git
 
 ## How do I get set up?
 
@@ -15,16 +15,19 @@ This is a BMI Calculator project for standalone applications using Node.js,TypeS
 
 ## Server Configuration:-
 
-    Node 10 software (Ubuntu 18.04, Link:- https://nodejs.org/en/)
-    MongoDB Server version: 4 (Ubuntu 18.04, link:- https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+    Node 14.17.0 software (Link:- https://nodejs.org/en/download/)
 
 ## Dependencies
 
     All dependencies are listed in package.json file
     * In terminal go to your project directory
-    * In terminal type "npm i" to add all dependencies.
+## Unit Test Suite
 
-## Deployment instructions:-
+    In terminal go to your project directory
+    * Type "npm run test"
+
+
+## Deployment Instructions:-
 
     In terminal go to your project directory
     * Type "npm run watch"
