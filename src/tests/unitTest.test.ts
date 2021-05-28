@@ -57,7 +57,7 @@ describe("test suite for BMI Calculator", () => {
         const questionOne: Array<generatedDataSet> =
             bmiCalculator.getBMI(dataSet);
         expect(questionOne.length).toEqual(expectOutputForQuestionOne.length);
-        expectOutputForQuestionOne.map((data, index) => {
+        questionOne.map((data, index) => {
             expect(data).toEqual(expectOutputForQuestionOne[index]);
         });
     });
