@@ -1,9 +1,9 @@
-import { dataSet } from "../data.json";
+import { dataSet } from "../src/data.json";
 import {
     BMICalculator,
     generatedDataSet,
     givenDataSet,
-} from "../module/bmiCalculator";
+} from "../src/module/bmiCalculator";
 
 describe("test suite for BMI Calculator", () => {
     const bmiCalculator: BMICalculator = new BMICalculator();

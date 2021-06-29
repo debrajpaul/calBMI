@@ -7,10 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest ./src/tests/*.test.ts",
-    "watch": "ts-node-dev ./src/app.ts",
+    "compile": "tsc",
+    "test": "jest ./tests/*.test.ts",
+    "watch": "ts-node-dev ./src/app.local.ts",
     "build": "tsc -p .",
-    "start": "node ./dist/app.js"
+    "start": "node ./dist/app.js",
+    "api": "nodemon --exec ts-node ./src/app.local.ts"
   },
   "repository": {
     "type": "git",
@@ -32,5 +34,14 @@
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "apollo-server-express": "^2.25.2",
+    "aws-lambda": "^1.0.6",
+    "aws-serverless-express": "^3.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "lambda-log": "^3.0.0"
+  }
 }
