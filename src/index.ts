@@ -10,12 +10,8 @@ if (!INSTANCE_TYPE || INSTANCE_TYPE === 'production') {
   dotenv.config({ path: path.resolve('./src/api/.env.qa') });
 }
 
-import awsServerlessExpress from 'aws-serverless-express';
-import { Context, APIGatewayEvent } from 'aws-lambda';
+import serverlessExpress from '@vendia/serverless-express';
 import app from './app';
 
-const server = awsServerlessExpress.createServer(app);
 
-export const handler = (event: APIGatewayEvent, context: Context): void => {
-  awsServerlessExpress.proxy(server, event, context);
-};
+export const handler = serverlessExpress({app});
